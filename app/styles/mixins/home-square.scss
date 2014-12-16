@@ -1,0 +1,5 @@
+@mixin home-square($colour) {
+  margin: 5px 1% 5px 1%;
+  padding:5px;
+  background-color: $colour;
+}

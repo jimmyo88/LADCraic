@@ -1,0 +1,59 @@
+@import '../mixins/home-square';
+@import '../mixins/breakpoint';
+
+main {
+
+  margin-top: 20px;
+
+  .leaderboard-container{
+    height: 200px;
+    background-color: #00b3ee;
+//    text-align: center;
+  }
+
+  .image-container {
+    max-width: 82%;
+    margin: 0 auto;
+
+
+    .masonry{
+      background-color: #dbdbdb;
+      margin: 20px auto 0 auto;
+    }
+
+    .post {
+      max-width: 286px;
+
+      &:nth-child(3n+1) {
+        @include home-square(#690007)
+      }
+
+      &:nth-child(3n+2) {
+        @include home-square(#376918)
+      }
+
+      &:nth-child(3n+3) {
+        @include home-square(#0d1f69)
+      }
+
+      h1 {
+        font-size: 14px;
+        font-weight: bold;
+        color: #ffffff;
+      }
+
+      .stock-image {
+        width: 100%;
+        height: auto;
+        max-width: 286px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

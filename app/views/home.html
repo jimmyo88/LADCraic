@@ -1,0 +1,12 @@
+<main>
+  <div class="leaderboard-container">LEADERBOARD GOES HERE</div>
+  <div class="image-container">
+    <div masonry="{isFitWidth: true}"  preserve-order class="masonry">
+      <div class="masonry-brick post" ng-repeat="post in posts">
+        <img src="{{post.imagePath}}" class="stock-image">
+        <h1>{{post.title}}</h1>
+        <p>{{post.subtitle}}/p>
+      </div>
+    </div>
+  </div>
+</main>
